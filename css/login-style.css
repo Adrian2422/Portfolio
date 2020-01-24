@@ -1,12 +1,9 @@
 body, html {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     padding: 0;
     margin: 0;
     color: #E0E0E5;
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+    height: 100%;
 }
 
 header{
@@ -46,14 +43,10 @@ nav li:hover{
 }
 
 main{
-    margin-top: 80px;
+    min-height: 100%;
     background-color: #5D6C66;
     width: 100%;
-    height: 100vh;
     float: left;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
 
 #logo{
@@ -79,10 +72,19 @@ a, h1:link{
     color: #E0E0E5;
 }
 
-#content{
-    margin-top: 100px;
+#main-content{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 36px;
+    text-align: center;
+}
+
+#copyright {
+    width: 100%;
+    text-align: center;
+    background-color: #8B2939;
+    float: left;
 }
 
 #login-window{
@@ -93,28 +95,11 @@ a, h1:link{
     border-radius: 15px;
     text-align: center;
     letter-spacing: 1px;
-}
-#copyright{
-    width: 100%;
-    text-align: center;
-    background-color: #8B2939;
-    float: left;
+    /* okienko na środku*/
     position: absolute;
-    right: 0;
+    top:0;
     bottom: 0;
     left: 0;
-}
-
-.media-container{
-    height: 100px; /* dla widoczności - do usunięcia*/
-    padding: 10px;
-    background-color: #8B2939;
-}
-
-.media-tile{
-    text-align: center;
-    margin: 10px;
-    height: 50px;
-    width: 50px;
-    float: left;
+    right: 0;
+    margin: auto;
 }

@@ -1,8 +1,9 @@
 body, html {
     padding: 0;
     margin: 0;
-    color: #E0E0E5;
-    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    color: #ffffff;
+    font: 400 17px "Dosis", sans-serif;
 }
 
 header{
@@ -43,7 +44,6 @@ nav li:hover{
 
 main{
     margin-top: 80px;
-    background-color: #5D6C66;
     width: 100%;
     float: left;
 }
@@ -78,12 +78,11 @@ a, h1:link{
     color: #E0E0E5;
 }
 
-#main-content{
+.main-content{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 36px;
-    text-align: center;
 }
 
 #copyright{
@@ -91,27 +90,94 @@ a, h1:link{
     text-align: center;
     background-color: #8B2939;
     float: left;
-}
-
-.lighter-main{
-    min-height: 350px;
-    text-justify: auto;
-    background-color: #90A19D !important;
-}
-
-.darker-main{
-    margin-top: -30px;
-    min-height: 350px;
-    text-justify: auto;
-    background-color: #5D6C66 !important;
 
 }
+
+.container-title{
+    padding-top: 80px;
+    min-height: 400px;
+    background: url("../img/bg-1-earth.jpg") no-repeat top center;
+    background-size: cover;
+    align-self: auto;
+}
+
+.intro{
+    padding-top: 80px;
+    padding-left: 15px;
+}
+
+.container-title h1{
+    font: normal 60px/1.1 "Dosis", sans-serif;
+    color: #fff;
+    text-align: left;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.container-title h2{
+    font: 30px "Dosis", sans-serif;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+}
+.about-me{
+    padding: 100px 15px 100px 15px;
+    background: url("../img/mask.jpg") no-repeat top fixed;
+    background-size: cover;
+    font: inherit;
+    color: #ffffff;
+}
+.about-me h2{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.about-me p{
+    color: #f0f0f0;
+    font-size: 19px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.about-me p.caption{
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+}
+#why-me {
+    padding: 100px 15px 100px 15px;
+    display: flex;
+    background-color: #ffffff;
+
+}
+
+#why-me h2{
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#why-me p.caption{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+}
+
 .container-inner{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-
 }
 
 .foot-col-1{
