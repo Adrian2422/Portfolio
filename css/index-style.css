@@ -45,14 +45,12 @@ main{
     margin-top: 80px;
     background-color: #5D6C66;
     width: 100%;
-    height: 2000px;
     float: left;
 }
 
 footer{
     background-color: #C94449;
     width: 100%;
-    height: 400px;
     float: left;
     clear: both;
 }
@@ -81,6 +79,9 @@ a, h1:link{
 }
 
 #main-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     font-size: 36px;
     text-align: center;
 }
@@ -94,24 +95,21 @@ a, h1:link{
 
 .lighter-main{
     min-height: 350px;
-    padding-left: 200px;
-    padding-right: 200px;
     text-justify: auto;
     background-color: #90A19D !important;
 }
 
 .darker-main{
+    margin-top: -30px;
     min-height: 350px;
-    padding-left: 200px;
-    padding-right: 200px;
     text-justify: auto;
     background-color: #5D6C66 !important;
 
 }
 .container-inner{
-    width: 100%;
-    height: 400px;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
 
 }
@@ -121,7 +119,6 @@ a, h1:link{
     height: 100%;
     padding: 25px;
     float: left;
-
 }
 
 .foot-col-2{
@@ -130,7 +127,6 @@ a, h1:link{
     height: 100%;
     padding: 25px;
     float: left;
-
 }
 
 .foot-col-3{
@@ -139,12 +135,6 @@ a, h1:link{
     padding: 25px;
     float: left;
     clear: none;
-}
-
-.media-container{
-    height: 100px; /* dla widoczności - do usunięcia*/
-    padding: 10px;
-    background-color: #8B2939;
 }
 
 .media-tile{
