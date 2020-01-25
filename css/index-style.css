@@ -5,7 +5,6 @@ body, html {
     color: #ffffff;
     font: 400 17px "Dosis", sans-serif;
 }
-
 header{
     position: fixed;
     margin: 0;
@@ -15,12 +14,10 @@ header{
     float: left;
     clear: both;
 }
-
 header nav ul li a:link{
     text-decoration: none;
     color: #E0E0E5;
 }
-
 nav ul{
     line-height: 80px;
     float: right;
@@ -28,33 +25,31 @@ nav ul{
     right: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
 nav li {
     padding: 0 20px 0 20px;
     display: inline-block;
     transition: background-color 0.5s ease-out;
 
 }
-
 nav li:hover{
     height: 75px;
     background-color: #8B2939;
     border-bottom: 5px solid #CCD1D6;
 }
-
 main{
     margin-top: 80px;
     width: 100%;
     float: left;
 }
-
+div{
+    display: block;
+}
 footer{
     background-color: #C94449;
     width: 100%;
     float: left;
     clear: both;
 }
-
 #logo{
     height: 80px;
     text-transform: uppercase;
@@ -62,29 +57,24 @@ footer{
     float: left;
     transition: background-color 0.5s ease-out;
 }
-
 #logo:hover{
     height: 75px;
     background-color: #8B2939;
     border-bottom: 5px solid #CCD1D6;
 }
-
 .media-tile:hover{
     transform: scale(1.25);
 }
-
 a, h1:link{
     text-decoration: none;
     color: #E0E0E5;
 }
-
 .main-content{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 36px;
 }
-
 #copyright{
     width: 100%;
     text-align: center;
@@ -92,7 +82,6 @@ a, h1:link{
     float: left;
 
 }
-
 .container-title{
     padding-top: 80px;
     min-height: 400px;
@@ -100,12 +89,10 @@ a, h1:link{
     background-size: cover;
     align-self: auto;
 }
-
 .intro{
     padding-top: 80px;
     padding-left: 15px;
 }
-
 .container-title h1{
     font: normal 60px/1.1 "Dosis", sans-serif;
     color: #fff;
@@ -113,7 +100,6 @@ a, h1:link{
     padding-bottom: 40px;
     margin: 0;
 }
-
 .container-title h2{
     font: 30px "Dosis", sans-serif;
     color: #fff;
@@ -149,22 +135,20 @@ a, h1:link{
     margin-bottom: 50px;
     padding-bottom: 0px;
 }
-#why-me {
-    padding: 100px 15px 100px 15px;
-    display: flex;
+.why-me {
+    padding: 100px 20px 100px 20px;
     background-color: #ffffff;
-
 }
-
-#why-me h2{
+.why-me h2{
     text-transform: uppercase;
     color: #000000;
     font-size: 36px;
     text-align: center;
+    margin-top: 0;
     margin-bottom: 5px;
-}
 
-#why-me p.caption{
+}
+.why-me p.caption{
     font-size: 17px;
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -172,21 +156,52 @@ a, h1:link{
     margin-bottom: 50px;
     padding-bottom: 0px;
 }
-
+.wm-row{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: center;
+}
+.wm-col{
+    text-align: center;
+    flex: 1;
+    color: #000000;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+}
+.wm-col a{
+    font-size: 150px;
+    color: #C94449;
+}
+.wm-col h2{
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-bottom: 10px;
+    color: #000000;
+}
+.wm-col p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 0;
+}
 .container-inner{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
 }
-
 .foot-col-1{
     width: 20%;
     height: 100%;
     padding: 25px;
     float: left;
 }
-
 .foot-col-2{
     text-align: justify;
     width: 30%;
@@ -194,7 +209,6 @@ a, h1:link{
     padding: 25px;
     float: left;
 }
-
 .foot-col-3{
     width: 20%;
     height: 100%;
@@ -202,7 +216,6 @@ a, h1:link{
     float: left;
     clear: none;
 }
-
 .media-tile{
     text-align: center;
     margin: 10px;
@@ -210,7 +223,6 @@ a, h1:link{
     width: 50px;
     float: left;
 }
-
 .foot-col-3 li{
     list-style-type: none;
 }
