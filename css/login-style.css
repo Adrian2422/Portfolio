@@ -1,9 +1,9 @@
 body, html {
     padding: 0;
     margin: 0;
-    color: #E0E0E5;
-    font-family: 'Open Sans', sans-serif;
     height: 100%;
+    color: #ffffff;
+    font: 400 17px "Dosis", sans-serif;
 }
 
 header{
@@ -14,32 +14,6 @@ header{
     background-color: #C94449;
     float: left;
     clear: both;
-}
-
-header nav ul li a:link{
-    text-decoration: none;
-    color: #E0E0E5;
-}
-
-nav ul{
-    line-height: 80px;
-    float: right;
-    margin: 0;
-    right: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-
-nav li {
-    padding: 0 20px 0 20px;
-    display: inline-block;
-    transition: background-color 0.5s ease-out;
-
-}
-
-nav li:hover{
-    height: 75px;
-    background-color: #8B2939;
-    border-bottom: 5px solid #CCD1D6;
 }
 
 main{

@@ -69,7 +69,7 @@ a, h1:link{
     text-decoration: none;
     color: #E0E0E5;
 }
-.main-content{
+.root{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
