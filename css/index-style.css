@@ -69,18 +69,18 @@ a, h1:link{
     text-decoration: none;
     color: #E0E0E5;
 }
-.root{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 36px;
-}
 #copyright{
     width: 100%;
     text-align: center;
     background-color: #8B2939;
     float: left;
 
+}
+.root{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 36px;
 }
 .container-title{
     padding-top: 80px;
