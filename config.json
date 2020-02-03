@@ -7,22 +7,40 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "24d1008bf15b6c02a5e7a6af026987dd",
-      "css": "github-text",
-      "code": 62215,
-      "src": "brandico"
+      "uid": "dc73bee1d58539abe8c96b958bf4c931",
+      "css": "fire",
+      "code": 59392,
+      "src": "elusive"
     },
     {
-      "uid": "47bd87a650e95b97f947d275ed968efe",
+      "uid": "2bd5f98482d86649958312ea2ab5bb40",
+      "css": "emo-laugh",
+      "code": 59410,
+      "src": "fontelico"
+    },
+    {
+      "uid": "ea2d9a8c51ca42b38ef0d2a07f16d9a7",
+      "css": "chart-line",
+      "code": 61953,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4743b088aa95d6f3b6b990e770d3b647",
       "css": "facebook-squared",
-      "code": 62222,
-      "src": "entypo"
+      "code": 62216,
+      "src": "fontawesome"
     },
     {
       "uid": "ccc2329632396dc096bb638d4b46fb98",
       "css": "mail-alt",
       "code": 61664,
       "src": "fontawesome"
+    },
+    {
+      "uid": "24d1008bf15b6c02a5e7a6af026987dd",
+      "css": "github-text",
+      "code": 62215,
+      "src": "brandico"
     },
     {
       "uid": "1145676a91138011729fa2909997af66",
@@ -33,7 +51,7 @@
     {
       "uid": "399ef63b1e23ab1b761dfbb5591fa4da",
       "css": "right-open",
-      "code": 59392,
+      "code": 59393,
       "src": "fontawesome"
     }
   ]

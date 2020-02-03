@@ -1,138 +1,307 @@
-body, html {
+/*Ogolne style*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
     padding: 0;
-    margin: 0;
-    color: #E0E0E5;
-    font-family: 'Open Sans', sans-serif;
+    border: 0;
+    vertical-align: baseline;
+    color: #ffffff;
+    font: 400 17px "Dosis", sans-serif;
 }
-
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 header{
-    position: fixed;
+    display: flex;
     margin: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #C94449;
-    float: left;
-    clear: both;
-}
-
-header nav ul li a:link{
-    text-decoration: none;
-    color: #E0E0E5;
-}
-
-nav ul{
-    line-height: 80px;
-    float: right;
-    margin: 0;
-    right: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-
-nav li {
-    padding: 0 20px 0 20px;
-    display: inline-block;
-    transition: background-color 0.5s ease-out;
-
-}
-
-nav li:hover{
+    padding: 0;
+    border: 0;
     height: 75px;
-    background-color: #8B2939;
-    border-bottom: 5px solid #CCD1D6;
-}
-
-main{
-    margin-top: 80px;
-    background-color: #5D6C66;
     width: 100%;
-    height: 2000px;
-    float: left;
+    background: transparent;
 }
-
+nav{
+    height: 75px;
+    float: right;
+}
+div{
+    display: block;
+}
 footer{
     background-color: #C94449;
     width: 100%;
-    height: 400px;
     float: left;
     clear: both;
 }
-
-#logo{
-    height: 80px;
-    text-transform: uppercase;
+.container{
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*navbar*/
+.toolbar{
+    height: 75px;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    height: 75px;
+}
+.menu li{
+    line-height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.5s ease-out;
+}
+.menu li:hover{
+    height: 75px;
+    background-color: #45141C;
+    border-bottom: 5px solid #CCD1D6;
+}
+.logo a:hover{
+    text-decoration: none;
+    color: #E0E0E5 !important;
+}
+.logo{
+    height: 75px;
     padding: 0 20px 0 20px;
+    text-transform: uppercase;
     float: left;
     transition: background-color 0.5s ease-out;
 }
-
-#logo:hover{
+.logo h1{
+    font: normal 40px "Dosis", sans-serif;
+    line-height: 70px;
+    color: #E0E0E5 !important;
+}
+.logo:hover{
     height: 75px;
-    background-color: #8B2939;
+    background-color: #45141C;
     border-bottom: 5px solid #CCD1D6;
 }
-
-.media-tile:hover{
-    transform: scale(1.25);
-}
-
 a, h1:link{
-    text-decoration: none;
-    color: #E0E0E5;
+    text-decoration: none !important;
+    color: #ffffff !important;
 }
-
-#main-content{
+/*tytulowa*/
+.master{
+    height: 100vh;
+    min-height: 400px;
+    background: url("../img/master_bg.jpg") no-repeat top center;
+    background-size: cover;
+    display: flex;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 36px;
+}
+.intro{
+    position: relative;
+    height: calc(100vh - 250px);
+}
+.title{
+    position: absolute;
+    top: 55%;
+    transform: translate(0, -50%);
+}
+.title h1{
+    font: normal 60px/1.1 "Dosis", sans-serif;
+    color: #fff;
+    text-align: left;
+    padding-bottom: 40px;
+    margin: 0;
+}
+.title h2{
+    font: 30px "Dosis", sans-serif;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+}
+/*o mnie*/
+.about-me{
+    padding: 100px 20px 100px 20px;
+    background: url("../img/about_me.jpg") no-repeat top fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+.about-me h2{
+    text-transform: uppercase;
+    color: #ffffff;
     font-size: 36px;
     text-align: center;
+    margin-bottom: 5px;
 }
-
-#copyright{
-    width: 100%;
+.about-me p{
+    color: #f0f0f0;
+    font-size: 19px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.about-me p.caption{
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    background-color: #8B2939;
-    float: left;
+    margin-bottom: 50px;
+    padding-bottom: 0;
 }
-
-.lighter-main{
-    min-height: 350px;
-    padding-left: 200px;
-    padding-right: 200px;
-    text-justify: auto;
-    background-color: #90A19D !important;
+/*dlaczego ja*/
+.why-me {
+    padding: 100px 20px 100px 20px;
+    background-color: #ffffff;
 }
-
-.darker-main{
-    min-height: 350px;
-    padding-left: 200px;
-    padding-right: 200px;
-    text-justify: auto;
-    background-color: #5D6C66 !important;
+.why-me h2{
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
 
 }
-.container-inner{
-    width: 100%;
-    height: 400px;
+.why-me p.caption{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+}
+.wm-row{
     display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
     justify-content: center;
-
 }
-
+.wm-col{
+    text-align: center;
+    flex: 1;
+    color: #000000;
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+}
+.wm-image{
+    font-size: 150px;
+    color: #C94449 !important;
+    transition: opacity .3s;
+}
+.wm-image:hover{
+    opacity: 0.8;
+    transition: opacity .3s;
+}
+.wm-col h2{
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-bottom: 10px;
+    color: #000000;
+}
+.wm-col p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 0;
+}
+/*umiejetnosci*/
+.skills{
+    padding: 100px 20px 100px 20px;
+    background: url("../img/skills_bg.jpg") no-repeat top fixed;
+    background-size: cover;
+}
+.skills h2{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.skills p{
+    color: #f0f0f0;
+    font-size: 19px;
+    line-height: 1.5;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.skills p.caption{
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+.skills-left{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    float: left;
+    opacity: 0.8;
+}
+.skills-right{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    float: right;
+    opacity: 0.8;
+}
+.skills-tile{
+    line-height: 1;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 100px;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    background-color: #BEA2A6;
+    text-align: center;
+    transition: background-color .3s ease-in-out;
+}
+.skills-tile:hover{
+    background-color: #E0E0E5;
+    transition: background-color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+}
+.skills a{
+    align-items: center;
+}
+/*footer*/
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
 .foot-col-1{
     width: 20%;
     height: 100%;
     padding: 25px;
     float: left;
-
 }
-
 .foot-col-2{
     text-align: justify;
     width: 30%;
     height: 100%;
     padding: 25px;
     float: left;
-
 }
-
 .foot-col-3{
     width: 20%;
     height: 100%;
@@ -140,21 +309,31 @@ a, h1:link{
     float: left;
     clear: none;
 }
-
-.media-container{
-    height: 100px; /* dla widoczności - do usunięcia*/
-    padding: 10px;
-    background-color: #8B2939;
+.foot-col-3 li{
+    list-style-type: none;
 }
-
+.media-container{
+    min-width: 50px;
+    min-height: 75px;
+}
 .media-tile{
-    text-align: center;
+    position: relative;
     margin: 10px;
     height: 50px;
     width: 50px;
     float: left;
+    transition: transform .2s;
 }
-
-.foot-col-3 li{
-    list-style-type: none;
+.media-tile:hover{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+}
+/*copy*/
+.copyright{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #8B2939;
+    float: left;
 }
