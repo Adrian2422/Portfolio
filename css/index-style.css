@@ -62,11 +62,6 @@ footer{
     display: flex;
     height: 75px;
 }
-@media only screen and (max-width: 993px){
-    .menu {
-        display: none;
-    }
-}
 .menu li{
     line-height: 80px;
     padding-left: 20px;
@@ -141,6 +136,16 @@ a, h1:link{
     color: #fff;
     text-align: left;
     margin: 0;
+}
+@media only screen and (max-width: 993px){
+    .toolbar{
+        display: none;
+    }
+    .title{
+        position: absolute;
+        top: 65%;
+        transform: translate(0, -45%);
+    }
 }
 /*o mnie*/
 .about-me{
