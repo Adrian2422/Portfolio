@@ -1,3 +1,4 @@
+/*Ogolne style*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
 address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
 b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
@@ -41,9 +42,8 @@ footer{
     max-width: 1180px;
     width: 100%;
     margin: 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
 }
+/*navbar*/
 .toolbar{
     height: 75px;
     width: 100%;
@@ -62,7 +62,7 @@ footer{
 }
 .menu li:hover{
     height: 75px;
-    background-color: #8B2939;
+    background-color: #45141C;
     border-bottom: 5px solid #CCD1D6;
 }
 .logo a:hover{
@@ -83,36 +83,26 @@ footer{
 }
 .logo:hover{
     height: 75px;
-    background-color: #8B2939;
+    background-color: #45141C;
     border-bottom: 5px solid #CCD1D6;
-}
-.media-tile:hover{
-    transform: scale(1.25);
 }
 a, h1:link{
     text-decoration: none !important;
     color: #ffffff !important;
 }
-.copyright{
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    background-color: #8B2939;
-    float: left;
+/*tytulowa*/
+.master{
+    height: 100vh;
+    min-height: 400px;
+    background: url("../img/master_bg.jpg") no-repeat top center;
+    background-size: cover;
+    display: flex;
 }
-.root{
+.main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 36px;
-}
-.master{
-    height: 100vh;
-    min-height: 400px;
-    background: url("../img/bg-1-earth.jpg") no-repeat top center;
-    background-size: cover;
-    display: flex;
 }
 .intro{
     position: relative;
@@ -136,11 +126,11 @@ a, h1:link{
     text-align: left;
     margin: 0;
 }
+/*o mnie*/
 .about-me{
-    padding: 100px 15px 100px 15px;
-    background: url("../img/mask.jpg") no-repeat top fixed;
+    padding: 100px 20px 100px 20px;
+    background: url("../img/about_me.jpg") no-repeat top fixed;
     background-size: cover;
-    font: inherit;
     color: #ffffff;
 }
 .about-me h2{
@@ -163,8 +153,9 @@ a, h1:link{
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
     margin-bottom: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
+/*dlaczego ja*/
 .why-me {
     padding: 100px 20px 100px 20px;
     background-color: #ffffff;
@@ -225,9 +216,11 @@ a, h1:link{
     text-align: justify;
     margin-bottom: 0;
 }
+/*umiejetnosci*/
 .skills{
-    padding: 20px;
-    background-color: gray;
+    padding: 100px 20px 100px 20px;
+    background: url("../img/skills_bg.jpg") no-repeat top fixed;
+    background-size: cover;
 }
 .skills h2{
     text-transform: uppercase;
@@ -257,29 +250,40 @@ a, h1:link{
     width: 50%;
     height: 100%;
     padding: 20px;
-    background-color: #8B2939;
-    opacity: 0.9;
     float: left;
+    opacity: 0.8;
 }
 .skills-right{
     width: 50%;
     height: 100%;
     padding: 20px;
-    background-color: #8B2939;
-    opacity: 0.9;
     float: right;
+    opacity: 0.8;
 }
-.skills .skills-tile{
+.skills-tile{
     line-height: 1;
     margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     flex: 100px;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    background-color: #BEA2A6;
     text-align: center;
-    background-color: darkred;
+    transition: background-color .3s ease-in-out;
+}
+.skills-tile:hover{
+    background-color: #E0E0E5;
+    transition: background-color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
 }
 .skills a{
     align-items: center;
 }
-.container-inner{
+/*footer*/
+.container-footer{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -305,13 +309,31 @@ a, h1:link{
     float: left;
     clear: none;
 }
+.foot-col-3 li{
+    list-style-type: none;
+}
+.media-container{
+    min-width: 50px;
+    min-height: 75px;
+}
 .media-tile{
-    text-align: center;
+    position: relative;
     margin: 10px;
     height: 50px;
     width: 50px;
     float: left;
+    transition: transform .2s;
 }
-.foot-col-3 li{
-    list-style-type: none;
+.media-tile:hover{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+}
+/*copy*/
+.copyright{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #8B2939;
+    float: left;
 }
