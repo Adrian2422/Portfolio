@@ -5,70 +5,62 @@ body, html {
     color: #ffffff;
     font: 400 17px "Dosis", sans-serif;
 }
-
 header{
     position: fixed;
     margin: 0;
     width: 100%;
-    height: 80px;
-    background-color: #C94449;
+    height: 75px;
+    background: transparent;
     float: left;
     clear: both;
 }
-
 main{
-    min-height: 100%;
-    background-color: #5D6C66;
+    height: 100vh;
+    background: url("../img/master_bg.jpg") no-repeat top center;
+    background-size: cover;
+    display: flex;
     width: 100%;
     float: left;
 }
-
-#logo{
-    height: 80px;
-    text-transform: uppercase;
+.toolbar{
+    height: 75px;
+    width: 100%;
+}
+.logo a:hover{
+    text-decoration: none;
+    color: #E0E0E5 !important;
+}
+.logo{
+    height: 75px;
     padding: 0 20px 0 20px;
+    text-transform: uppercase;
     float: left;
     transition: background-color 0.5s ease-out;
 }
-
-#logo:hover{
+.logo h1{
+    font: normal 40px "Dosis", sans-serif;
+    line-height: 70px;
+    color: #E0E0E5 !important;
+}
+.logo:hover{
     height: 75px;
-    background-color: #8B2939;
+    background-color: #45141C;
     border-bottom: 5px solid #CCD1D6;
 }
-
 .media-tile:hover{
     transform: scale(1.25);
 }
-
 a, h1:link{
     text-decoration: none;
     color: #E0E0E5;
 }
-
-#main-content{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 36px;
-    text-align: center;
-}
-
-#copyright {
-    width: 100%;
-    text-align: center;
-    background-color: #8B2939;
-    float: left;
-}
-
-#login-window{
+.login-window{
     height: 150px;
     width: 300px;
     background-color: #90A19D;
     border: 5px solid #CCD1D6;
     border-radius: 15px;
     text-align: center;
-    letter-spacing: 1px;
     /* okienko na środku*/
     position: absolute;
     top:0;
@@ -76,4 +68,23 @@ a, h1:link{
     left: 0;
     right: 0;
     margin: auto;
+}
+.login-window h2{
+    padding-top: 10px;
+}
+.inner-window{
+    padding-top: 10px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100px;
+    width: 200px;
+}
+label{
+    text-align: right;
+}
+input {
+    float: right;
 }
