@@ -137,7 +137,7 @@ a, h1:link{
     text-align: left;
     margin: 0;
 }
-@media only screen and (max-width: 993px){
+@media only screen and (max-width: 1000px){
     .toolbar{
         display: none;
     }
