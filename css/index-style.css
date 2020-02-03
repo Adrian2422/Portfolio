@@ -18,6 +18,7 @@ output, ruby, section, summary, time, mark, audio, video {
 }
 header{
     display: flex;
+
     margin: 0;
     padding: 0;
     border: 0;
@@ -39,9 +40,9 @@ footer{
     clear: both;
 }
 .container{
-    max-width: 1180px;
     width: 100%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 /*navbar*/
 .toolbar{
@@ -49,6 +50,10 @@ footer{
     width: 100%;
 }
 .menu{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     height: 75px;
 }
@@ -129,6 +134,7 @@ a, h1:link{
 /*o mnie*/
 .about-me{
     display: flex;
+    flex-direction: column;
     padding: 100px 20px 100px 20px;
     background: url("../img/about_me.jpg") no-repeat top fixed;
     background-size: cover;
@@ -159,6 +165,7 @@ a, h1:link{
 /*dlaczego ja*/
 .why-me {
     display: flex;
+    flex-direction: column;
     padding: 100px 20px 100px 20px;
     background-color: #ffffff;
 }
@@ -181,7 +188,8 @@ a, h1:link{
 }
 .wm-row{
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
 }
@@ -222,6 +230,7 @@ a, h1:link{
 .skills{
     min-height: 550px;
     display: flex;
+    flex-direction: column;
     padding: 100px 20px 100px 20px;
     background: url("../img/skills_bg.jpg") no-repeat top fixed;
     background-size: cover;
@@ -288,38 +297,49 @@ a, h1:link{
 /*footer*/
 .container-footer{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
 }
 .foot-col-1{
-    width: 20%;
+    flex: 1;
+    min-width: 450px;
     height: 100%;
-    padding: 25px;
+    padding: 20px;
     float: left;
 }
 .foot-col-2{
+    flex: 1;
+    min-width: 450px;
     text-align: justify;
-    width: 30%;
     height: 100%;
-    padding: 25px;
+    padding: 20px;
     float: left;
 }
 .foot-col-3{
-    width: 20%;
+    flex: 1;
+    min-width: 450px;
     height: 100%;
-    padding: 25px;
+    padding: 20px;
     float: left;
     clear: none;
+}
+.foot-col-1 h4, .foot-col-2 h4, .foot-col-3 h4{
+    text-align: center;
 }
 .foot-col-3 li{
     list-style-type: none;
 }
 .media-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     min-width: 50px;
     min-height: 75px;
 }
 .media-tile{
+    flex: 1;
     position: relative;
     margin: 10px;
     height: 50px;
@@ -334,9 +354,13 @@ a, h1:link{
 /*copy*/
 .copyright{
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 0;
     text-align: center;
     background-color: #8B2939;
     float: left;
+}
+.copyright p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
 }
