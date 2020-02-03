@@ -128,6 +128,7 @@ a, h1:link{
 }
 /*o mnie*/
 .about-me{
+    display: flex;
     padding: 100px 20px 100px 20px;
     background: url("../img/about_me.jpg") no-repeat top fixed;
     background-size: cover;
@@ -157,6 +158,7 @@ a, h1:link{
 }
 /*dlaczego ja*/
 .why-me {
+    display: flex;
     padding: 100px 20px 100px 20px;
     background-color: #ffffff;
 }
@@ -218,6 +220,8 @@ a, h1:link{
 }
 /*umiejetnosci*/
 .skills{
+    min-height: 550px;
+    display: flex;
     padding: 100px 20px 100px 20px;
     background: url("../img/skills_bg.jpg") no-repeat top fixed;
     background-size: cover;
@@ -230,14 +234,6 @@ a, h1:link{
     margin-top: 0;
     margin-bottom: 5px;
 }
-.skills p{
-    color: #f0f0f0;
-    font-size: 19px;
-    line-height: 1.5;
-    text-align: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 .skills p.caption{
     font-size: 17px;
     color: rgba(255, 255, 255, 0.7);
@@ -248,14 +244,12 @@ a, h1:link{
 }
 .skills-left{
     width: 50%;
-    height: 100%;
     padding: 20px;
     float: left;
     opacity: 0.8;
 }
 .skills-right{
     width: 50%;
-    height: 100%;
     padding: 20px;
     float: right;
     opacity: 0.8;
@@ -281,6 +275,15 @@ a, h1:link{
 }
 .skills a{
     align-items: center;
+}
+.skills p{
+    color: #f0f0f0;
+    font-size: 19px;
+    text-align: left;
+}
+.skills-link{
+    padding-top: 20px;
+    float: left;
 }
 /*footer*/
 .container-footer{
