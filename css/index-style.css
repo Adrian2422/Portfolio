@@ -310,39 +310,25 @@ a, h1:link{
 }
 /*footer*/
 .container-footer{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: center;
 }
-.foot-col-1{
-    flex: 1;
-    min-width: 450px;
+.foot-col{
+    max-width: 400px;
     height: 100%;
     padding: 20px;
     float: left;
 }
-.foot-col-2{
-    flex: 1;
-    min-width: 450px;
-    text-align: justify;
-    height: 100%;
-    padding: 20px;
-    float: left;
-}
-.foot-col-3{
-    flex: 1;
-    min-width: 450px;
-    height: 100%;
-    padding: 20px;
-    float: left;
-    clear: none;
-}
-.foot-col-1 h4, .foot-col-2 h4, .foot-col-3 h4{
+.foot-col h4{
     text-align: center;
 }
-.foot-col-3 li{
+.foot-col p{
+    text-align: justify;
+}
+.foot-col li{
     list-style-type: none;
 }
 .media-container{
