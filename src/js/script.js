@@ -12,6 +12,10 @@ const linkImgArray = [
 
 const navLinks = $('.sideNav__menu li a');
 $(document).ready(() => {
+  
+  setTimeout(() => {
+    $(".loading").remove();
+  }, 2000);
   [...links].forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();

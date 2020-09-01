@@ -17,14 +17,16 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="body">
+    <div class="loading">
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__navbar">
           <div class="header__logo">
             <a href="index.html" target="_self"><h1>< Adrian_Kloc /></h1></a>
           </div>
-          <nav class='header__nav'>
+          <nav class="header__nav">
             <ul class="nav__menu">
               <li><a href="#aboutMe" target="_self">O mnie</a></li>
               <li><a href="#whyMe" target="_self">Dlaczego ja</a></li>
@@ -43,7 +45,7 @@
     </header>
     <header class="sideHeader">
       <button class="sideHeader__button"></button>
-      <nav class='sideHeader__nav'>
+      <nav class="sideHeader__nav">
         <ul class="sideNav__menu">
           <li><a href="#aboutMe" target="_self"></a></li>
           <li><a href="#whyMe" target="_self"></a></li>
@@ -78,7 +80,7 @@
               Poza informatyką interesuję się szeroko pojętą nauką, tematyką
               sci-fi oraz fantasy, lubię włoską kuchnię oraz grać w planszówki.
             </p>
-          </div> 
+          </div>
         </div>
       </section>
       <section id="whyMe" class="whyMe">
@@ -125,37 +127,45 @@
         <div class="container">
           <h2>Umiejętności</h2>
           <p class="caption">Co już umiem?</p>
-          <div class="skills__left">
-            <div class="skillTile">HTML5</div>
-            <div class="skillTile">CSS (SASS/SCSS)</div>
-            <div class="skillTile">JavaScript ES6</div>
-            <div class="skillTile">Jquery</div>
-          </div>
-          <div class="skills__right">
-            <div class="skillTile">Bootstrap</div>
-            <div class="skillTile">WordPress</div>
-            <div class="skillTile">Git</div>
-            <div class="skillTile">Język angielski</div>
+          <div class="skills__container">
+            <div class="skills__left">
+              <div class="skillTile">HTML5</div>
+              <div class="skillTile">CSS (SASS/SCSS)</div>
+              <div class="skillTile">JavaScript ES6</div>
+              <div class="skillTile">Jquery</div>
+            </div>
+            <div class="skills__right">
+              <div class="skillTile">Bootstrap</div>
+              <div class="skillTile">WordPress</div>
+              <div class="skillTile">Git</div>
+              <div class="skillTile">Język angielski</div>
+            </div>
           </div>
           <p class="caption">Czego się uczę?</p>
-          <div class="skills__left">
-            <div class="skillTile">React Js</div>
-            <div class="skillTile">Metodologie BEM i AtomicCSS</div>
+          <div class="skills__container">
+            <div class="skills__left">
+              <div class="skillTile">React Js</div>
+              <div class="skillTile">Metodologie BEM i AtomicCSS</div>
+            </div>
+            <div class="skills__right">
+              <div class="skillTile">Adobe Illustrator</div>
+              <div class="skillTile">Adobe XD</div>
+            </div>
           </div>
-          <div class="skills__right">
-            <div class="skillTile">Adobe Illustrator</div>
-            <div class="skillTile">Adobe XD</div>
-          </div>
-          <p class="skills__link">
+          <p class="skills__caption">
             Lista moich osiągnięć jest dostępna na moim profilu na GitHub.
-            <a href="https://github.com/Adrian2422" target="_blank"
-              >Zajrzyj tutaj!</a
-            >
           </p>
         </div>
+        <a
+          class="skills__link"
+          href="https://github.com/Adrian2422"
+          target="_blank"
+        >
+          <div>Zajrzyj tutaj!</div>
+        </a>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <div id="footer-contact" class="footer__col">
