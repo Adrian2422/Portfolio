@@ -5,10 +5,10 @@ const skillsLink = $('.skills__link a');
 const sideHeader = $('.sideHeader');
 const sideNavBtn = $('.sideHeader__button');
 const linkImgArray = [
-  './src/img/SVG/about_me.svg',
-  './src/img/SVG/why_me.svg',
-  './src/img/SVG/skills.svg',
-  './src/img/SVG/contact.svg'];
+  './src/img/SVG/sidebar/about_me.svg',
+  './src/img/SVG/sidebar/why_me.svg',
+  './src/img/SVG/sidebar/skills.svg',
+  './src/img/SVG/sidebar/contact.svg'];
 
 const navLinks = $('.sideNav__menu li a');
 $(document).ready(() => {

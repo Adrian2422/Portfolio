@@ -81,7 +81,7 @@ html {
 }
 @media only screen and (max-width: 1080px) {
   .container {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -190,11 +190,11 @@ html {
   border: none;
   outline: none;
   cursor: pointer;
-  background: url(../img/SVG/arrow.svg) center no-repeat;
+  background: url(../img/SVG/sidebar/arrow.svg) center no-repeat;
   transform: rotate(0);
 }
 .sideHeader__button--visible {
-  background: url(../img/SVG/arrow.svg) center no-repeat;
+  background: url(../img/SVG/sidebar/arrow.svg) center no-repeat;
   transform: rotate(180deg);
 }
 
@@ -209,7 +209,7 @@ html {
   justify-content: space-between;
 }
 .sideNav__menu li {
-  height: 75px;
+  height: 40px;
   width: 30px;
   line-height: 80px;
   text-align: center;
@@ -223,6 +223,7 @@ html {
   width: 100%;
   height: 100%;
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   text-decoration: none;
 }
@@ -295,7 +296,7 @@ html {
 }
 .aboutMe p {
   color: #f0f0f0;
-  font-size: 19px;
+  font-size: 1em;
   line-height: 1.5;
   text-align: left;
   margin: 0 auto;
@@ -411,6 +412,7 @@ html {
 }
 
 .skills__container {
+  margin-bottom: 50px;
   display: flex;
   width: 100%;
 }
@@ -506,7 +508,6 @@ html {
 
 .footer__col {
   flex: 1;
-  max-width: 400px;
   height: 100%;
   padding: 20px;
   margin: auto;
@@ -526,28 +527,31 @@ html {
 
 .media__container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   min-width: 50px;
   min-height: 75px;
 }
-
 .media__tile {
-  flex: 1 1 1 1;
   position: relative;
-  margin: 10px;
   height: 50px;
   width: 50px;
-  float: left;
+  margin: 10px;
   transition: transform 0.2s;
+}
+.media__tile--fb {
+  background: url(../img/SVG/media/FB_icon.svg) no-repeat;
+}
+.media__tile--in {
+  background: url(../img/SVG/media/LINKEDIN_icon.svg) no-repeat;
+}
+.media__tile--github {
+  background: url(../img/SVG/media/GITHUB_icon.svg) no-repeat;
+}
+.media__tile--mail {
+  background: url(../img/SVG/media/MAIL_icon.svg) no-repeat;
 }
 .media__tile:hover {
   transform: scale(1.25);
-}
-@media only screen and (max-width: 1080px) {
-  .media__tile {
-    flex: 1 1;
-  }
 }
 
 /*copy*/
