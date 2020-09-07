@@ -1,7 +1,10 @@
 # Moja osobista strona
+E-wizytówka prezentująca informacje o mnie 
+
+## Użyte technologie:
 - HTML
 - CSS (SCSS)
-- JavaScript
+- JavaScript (Jquery)
 
-## Live
+## Live:
 https://adrian2422.github.io/Portfolio
